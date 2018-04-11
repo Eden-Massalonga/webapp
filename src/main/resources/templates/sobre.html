@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/extra.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+	  	p {
+		text-align: "justify";
+		}
+  </style>
+</head>
+<body>
+  <nav class="light-blue darken-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">SGA</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Inicio</a></li>
+        			<!-- Dropdown Trigger -->
+					<li><a class="dropdown-trigger" href="#" data-target="cadastro">Cadastro<i class="material-icons right">arrow_drop_down</i></a>
+					
+					<!-- Dropdown Cadastro -->
+					  <ul id='cadastro' class='dropdown-content'>
+					    <li><a href="/cadastro">Secretaria</a></li>
+					    <li><a href="#!">Professor</a></li>
+					    <li class="divider" tabindex="-1"></li>
+					    <li><a href="#!">Classe</a></li>
+					    <li><a href="#!">Disciplina</a></li>
+					    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+					    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+					  </ul>
+					
+					</li>
+					<!-- Dropdown Pedagogia -->
+					<li><a class="dropdown-trigger" href='#' data-target='pedagogia'>Pedagogia<i class="material-icons right">arrow_drop_down</i></a>
+					
+					<!-- Dropdown Structure -->
+					  <ul id='pedagogia' class='dropdown-content'>
+					    <li><a href="/cadastro">Index</a></li>
+					    <li><a href="#!">two</a></li>
+					    <li class="divider" tabindex="-1"></li>
+					    <li><a href="#!">three</a></li>
+					    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+					    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+					  </ul>					
+					</li>
+					
+					<!-- Dropdown Trigger -->
+					<li><a class="dropdown-trigger" href='#' data-target='relatorio'>Relatorio<i class="material-icons right">arrow_drop_down</i></a>
+					
+					<!-- Dropdown Relatorio -->
+					  <ul id='relatorio' class='dropdown-content'>
+					    <li><a href="/cadastro">Index</a></li>
+					    <li><a href="#!">two</a></li>
+					    <li class="divider" tabindex="-1"></li>
+					    <li><a href="#!">three</a></li>
+					    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+					    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+					  </ul>
+					
+					</li>
+					<li><a href="/sobre">Sobre</a></li>			  
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Menu</a></li>
+        <li><a href="/">Inicio</a></li>
+        			<!-- Dropdown Trigger -->
+					<li><a class="dropdown-trigger" href="#" data-target="cadastroM">Cadastro<i class="material-icons right">arrow_drop_down</i></a>
+					
+					<!-- Dropdown Cadastro -->
+					  <ul id='cadastroM' class='dropdown-content'>
+					    <li><a href="/cadastro">Secretaria</a></li>
+					    <li><a href="#!">Professor</a></li>
+					    <li class="divider" tabindex="-1"></li>
+					    <li><a href="#!">Classe</a></li>
+					    <li><a href="#!">Disciplina</a></li>
+					    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+					    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+					  </ul>
+					
+					</li>
+					<!-- Dropdown Pedagogia -->
+					<li><a class="dropdown-trigger" href='#' data-target='pedagogiaM'>Pedagogia<i class="material-icons right">arrow_drop_down</i></a>
+					
+					<!-- Dropdown Structure -->
+					  <ul id='pedagogiaM' class='dropdown-content'>
+					    <li><a href="/cadastro">Index</a></li>
+					    <li><a href="#!">two</a></li>
+					    <li class="divider" tabindex="-1"></li>
+					    <li><a href="#!">three</a></li>
+					    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+					    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+					  </ul>					
+					</li>
+					
+					<!-- Dropdown Trigger -->
+					<li><a class="dropdown-trigger" href='#' data-target='relatorioM'>Relatorio<i class="material-icons right">arrow_drop_down</i></a>
+					
+					<!-- Dropdown Relatorio -->
+					  <ul id='relatorioM' class='dropdown-content'>
+					    <li><a href="/cadastro">Index</a></li>
+					    <li><a href="#!">two</a></li>
+					    <li class="divider" tabindex="-1"></li>
+					    <li><a href="#!">three</a></li>
+					    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+					    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+					  </ul>
+					
+					</li>
+					<li><a href="/sobre">Sobre</a></li>	
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Sistema de Gestão Académica</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Uma aplicação web para gerir a sua Escola.</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons large">settings</i></h2>
+            <h5 class="center">Configure a sua Escola</h5>
+
+            <p style="text-align: justifiy;">Faca a personalizacao da aplicacao para corresponder a realidade da sua Escola. Crie o plano currricular, turmas  e registe os professores.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons large">mode_edit</i></h2>
+            <h5 class="center">Monitore os seus Estudantes</h5>
+
+            <p class="light">Matricule, Inscreva, adicione os aproveitamentos e mais...</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons large">show_chart</i></h2>
+            <h5 class="center">Esteja a par de tudo!</h5>
+
+            <p class="light">Obtenha resumos e graficos sobre o desempenho dos seus Estudantes e sobre a sua Escola.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Desenvolvedores</h5>
+          <p class="grey-text text-lighten-4">Somos um grupo de Estudantes que pretende criar ferramentas que auxiliem e melhorem a forma como as instituicoes oferecem os seus servicos.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
