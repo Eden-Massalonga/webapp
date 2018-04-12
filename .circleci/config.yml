@@ -39,17 +39,3 @@ build:
         
       # run tests!
       - run: mvn integration-test	  
-deploy:
-prod:
-branch: master
-heroku:
-appname: apresentacao
-		
-workflows:
-version: 2
-build-and-deploy:
-jobs:
-- build  
-- deploy:
-requires:
-- build
