@@ -40,7 +40,7 @@ jobs:
       # run tests!
       - run: mvn integration-test	  
 
-deployment:
+deploy:
     prod:
     branch: master
     heroku:
@@ -48,10 +48,10 @@ deployment:
 
 workflows:
   version: 2
-  build_and_deployment:
+  build_and_deploy:
     jobs:
       - build
-      - deployment:
+      - deploy:
           requires:
             -build
 		  
