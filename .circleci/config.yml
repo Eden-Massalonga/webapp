@@ -40,8 +40,8 @@ jobs:
       # run tests!
       - run: mvn integration-test
 	  
-	deployment:
-	  prod:
-		branch: master
-		heroku:
-		  appname: sga-webapp
+deployment:
+prod:
+branch: master
+heroku:
+appname: sga-webapp
