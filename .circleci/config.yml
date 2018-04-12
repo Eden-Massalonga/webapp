@@ -44,7 +44,7 @@ jobs:
   staging:
     branch: master
     heroku:
-      appname: sga-webapp
+      appname: apresentacao
 	  
 workflows:
   version: 2
